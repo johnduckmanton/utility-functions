@@ -11,7 +11,7 @@ namespace AzureBillingFunction
 	public static class AzureBillingFunction
 	{
 		internal const string CURRENCY_CHAR = "&pound;";
-		const string TRIGGER = "0 0 9 * * 1";
+		const string TRIGGER = "0 0 1 * * *";	// Trigger to run on the 1st day of each month
 
 		static string MAIL_FROM_ADDRESS = Environment.GetEnvironmentVariable("MAIL_FROM_ADDRESS");
 		static string MAIL_FROM_NAME = Environment.GetEnvironmentVariable("MAIL_FROM_NAME");
